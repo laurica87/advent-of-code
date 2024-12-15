@@ -1,22 +1,22 @@
 import re
 
-# # Read input from a file
-# with open('day3/input1.txt', 'r') as file:
-#     input_text = file.read()
+# Read input from a file
+with open('day3/input1.txt', 'r') as file:
+    input_text = file.read()
 
-# # Define a regex pattern to match only mul(num1,num2)
-# pattern = r"mul\((\d+),(\d+)\)"
+# Define a regex pattern to match only mul(num1,num2)
+pattern = r"mul\((\d+),(\d+)\)"
 
-# # Find all matches in the input text
-# matches = re.findall(pattern, input_text)
+# Find all matches in the input text
+matches = re.findall(pattern, input_text)
 
-# # Perform multiplication and calculate the sum
-# multiplications = [int(num1) * int(num2) for num1, num2 in matches]
-# total_sum = sum(multiplications)
+# Perform multiplication and calculate the sum
+multiplications = [int(num1) * int(num2) for num1, num2 in matches]
+total_sum = sum(multiplications)
 
-# # Output the results
-# print("Matches and results:", [(int(num1), int(num2), int(num1) * int(num2)) for num1, num2 in matches])
-# print("Sum of multiplications:", total_sum)
+# Output the results
+print("Matches and results:", [(int(num1), int(num2), int(num1) * int(num2)) for num1, num2 in matches])
+print("Sum of multiplications:", total_sum)
 
 ### part 2
 
